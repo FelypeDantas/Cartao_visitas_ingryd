@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartão de visitas</title>
+    <title>Cartão de Visitas</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./fotos/Ingryd.jpg" type="image/x-icon">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -25,73 +34,74 @@
     </script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
 
-    <!-- Container geral -->
-    <div class="flex justify-center w-full my-10 px-4">
+    <!-- Cartão -->
+    <div class="w-full max-w-5xl">
 
-        <!-- Cartão -->
         <div
-            class="flex flex-col sm:flex-row items-center sm:items-start 
-                   p-6 bg-gradient-to-r from-gray-300 to-slate-400 
-                   rounded-lg w-full max-w-4xl">
+            class="flex flex-col sm:flex-row items-center
+                   p-8 sm:p-10
+                   bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500
+                   rounded-[60px] shadow-xl overflow-hidden">
 
-            <!-- Imagem -->
+            <!-- Foto -->
             <img
-                class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 
-                       rounded-full object-cover mb-6 sm:mb-0 sm:mr-6"
                 src="./fotos/Ingryd.jpg"
-                alt="Foto Ingryd">
+                alt="Foto Ingryd"
+                class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56
+                       rounded-full object-cover mb-6 sm:mb-0 sm:mr-10">
 
-            <!-- Informações do perfil -->
+            <!-- Conteúdo -->
             <div class="text-center sm:text-left">
-                <p class="text-4xl font-black text-primary font-titulo sm:text-5xl md:text-6xl">
-                    Ingryd Segala
-                </p>
 
-                <p class="text-3xl mb-4 sm:text-4xl md:text-5xl text-primary">
+                <h1
+                    class="font-titulo font-bold tracking-wide text-primary
+                           text-4xl sm:text-5xl md:text-6xl">
+                    Ingryd Segala
+                </h1>
+
+                <h2
+                    class="text-primary whitespace-nowrap
+                           text-2xl sm:text-3xl mb-4">
                     Desenvolvedora de sistemas
-                </p>
+                </h2>
 
                 <!-- Contato -->
-                <p class="text-lg mt-4">
+                <p class="text-lg text-primary mb-4">
                     <a href="https://wa.me/5511913705057" target="_blank"
-                       class="hover:text-green-500 text-primary">
-                        <i class="fab fa-whatsapp fa-lg"></i> (11) 91370-5057
+                       class="hover:text-green-600 transition">
+                        <i class="fab fa-whatsapp"></i> (11) 91370-5057
                     </a>
                 </p>
 
-                <!-- Redes sociais -->
-                <ul class="flex justify-center sm:justify-start gap-4 mt-4">
-                    <li>
-                        <a href="https://www.linkedin.com/in/ingryd-segala-364876344/"
-                           target="_blank"
-                           class="transition-transform transform hover:scale-110 hover:text-blue-500 text-primary">
+                <!-- Redes Sociais -->
+                <ul class="flex justify-center sm:justify-start gap-6 text-primary">
+                    <li class="hover:scale-110 transition">
+                        <a href="https://www.linkedin.com/in/ingryd-segala-364876344/" target="_blank">
                             <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://github.com/IngrydSegala"
-                           target="_blank"
-                           class="transition-transform transform hover:scale-110 hover:text-gray-800 text-primary">
+                    <li class="hover:scale-110 transition">
+                        <a href="https://github.com/IngrydSegala" target="_blank">
                             <i class="fab fa-github fa-2x"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.instagram.com/segalaingryd/"
-                           target="_blank"
-                           class="transition-transform transform hover:scale-110 hover:text-pink-500 text-primary">
+                    <li class="hover:scale-110 transition">
+                        <a href="https://www.instagram.com/segalaingryd/" target="_blank">
                             <i class="fab fa-instagram fa-2x"></i>
                         </a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </div>
 
 </body>
-
 </html>
+
+
 
 
 
